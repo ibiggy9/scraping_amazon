@@ -1,7 +1,8 @@
 import openpyxl
 
 def american():
-    wb = openpyxl.load_workbook('/Users/user9231/desktop/ecom/am_sales/us/Sales Diagnostic_Detail View_US (1).xlsx')
+    #path to sales report from vendor central
+    wb = openpyxl.load_workbook('path to report')
     ws = wb['US_Detail View_Sales Diagnostic']
     mylist = []
     for col_cells in ws.iter_cols(min_col=1, max_col=1):
@@ -21,7 +22,7 @@ def american():
     return url_list
 
 def canadian():
-    wb = openpyxl.load_workbook('/Users/user9231/desktop/ecom/am_sales/DOM/Sales Diagnostic_Detail View_CA.xlsx')
+    wb = openpyxl.load_workbook('Path to report')
     ws = wb['CA_Detail View_Sales Diagnostic']
     mylist = []
     for col_cells in ws.iter_cols(min_col=1, max_col=1):
