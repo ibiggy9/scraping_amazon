@@ -1,2 +1,2 @@
 # scraping_amazon
-This is a scraper for Amazon for a select array of products
+NOTE: THIS SCRAPER HAS BEEN DEPRECATED: This is a scraper for Amazon for a select array of products
